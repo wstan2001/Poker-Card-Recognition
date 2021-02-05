@@ -25,6 +25,8 @@ For the sake of consistency, so that I didn't have to use a new set of coordinat
 
 ## Attempt 1: Image Hashing
 
+The first thing I tried followed the guidelines from the Medium article.
+
 ## Attempt 2: ML & CNN
 
 ## Conclusion
