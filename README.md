@@ -1,8 +1,6 @@
 # Poker-Card-Recognition
 Screen scraping mini project conducted to detect bias in PokerStars pocket cards.
 
-NOTE: You might not see any code files attached to this repo. That is because this is a work in progress! More updates to come soon :)
-
 ## Intro
 
 I'm a big fan of poker, and my go-to is the PokerStars web app. However, I've been harboring a sneaking suspicion that poker software programs may be incentivized to rig the deck and let the users play bigger hands to make the game more exciting. I wanted to put part of this hypothesis to the test by collecing data about the pocket pairs I receive in PokerStars and seeing if the results match the expected distribution for a truly random deck of cards!
