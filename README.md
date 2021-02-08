@@ -45,7 +45,7 @@ The first thing I tried followed the guidelines from the Medium article. The ide
 
 I worked with Python's imagehash modules and tried out three different types of hashing (ahash, phash, dhash) to see which one worked the best. Unfortunately, I kept running into problems where I would snap a photo of say a heart, find its hash, then later snap another photo of a heart, and find out it had a different hash! I did some testing and found out the order of the cards didn't matter, so I was a bit confused at what the issue was. Taking a closer look at the images I was screenshotting gave it away:
 
-<img src="/images/cards2.JPG" alt="screenshot on mac"/>
+<img src="/images/cards2.png" alt="screenshot on mac"/>
 
 Notice that in the bottom left corner of the first card's suit there is a circle displaying my profile image. This circle actually pulses light when it's my turn to act, so this was the culprit behind the varying hashes! I had to tweak the screenshot coordinates to exclude the pulsing circle. This helped somewhat, but the issue with the same suit/value giving different hashes persisted, which was extremely annoying. Originally, I was planning on having a dictionary mapping suit hashes to suit and value hashes to value. The sizes of these dictionaries should have been 4 and 13, respectively, but with the non-injective hashes the dictionaries could grow beyond this... I belive the problem was that the hashes I was using were too specific; moving the screen even a few pixels would produce totally different hashes for my pictures, so I had to align my screen with a margin of error of only a few pixels, which was a pain. I wasn't able to figure out a method to make the hashes more robust, so I decided to try something else.
 
